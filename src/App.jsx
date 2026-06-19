@@ -18,9 +18,9 @@ import Contacts from "./assets/components/Navcontact/Contacts.jsx";
 import PlaceDetails from "./assets/components/CharDham/PlaceDetails.jsx";
 import ActivityDetails from "./assets/components/Activities/ActivityDetails.jsx";
 
-/* NEW COMPONENTS */
 import ScrollProgress from "./assets/components/ScrollProgress.jsx";
 import FloatingContact from "./assets/components/FloatingContact.jsx";
+import ScrollToTop from "./assets/components/ScrollToTop.jsx";
 
 function HomePage() {
   return (
@@ -38,6 +38,8 @@ function HomePage() {
 function App() {
   return (
     <BrowserRouter>
+      {/* Auto scroll to top on route change */}
+      <ScrollToTop />
 
       {/* Scroll Progress Bar */}
       <ScrollProgress />
